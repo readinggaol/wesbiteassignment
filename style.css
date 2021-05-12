@@ -1,0 +1,34 @@
+body{
+    background-color: bisque;
+}
+.banner{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    background-color: lightgray;
+    margin: auto;
+}
+.listlabel{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    display: block;
+}
+.tool{
+    background-color: lightgoldenrodyellow;
+    padding: 2%;
+}
+.tool li{
+    font-style: italic;
+}
+.main{
+    background-color: lightyellow;
+    margin-bottom: 10%;
+}
+.main img{
+    
+}
+a{
+    display: block;
+}
+img{
+    border:5px solid lightslategray
+}
