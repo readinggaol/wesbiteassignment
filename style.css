@@ -7,32 +7,38 @@ body{
     background-color: lightgray;
     margin: auto;
 }
-.listlabel{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: underline;
-    display: block;
-}
 .tool{
     background-color: lightgoldenrodyellow;
     padding: 2%;
+    float: left;
+    width: 25%;
 }
 .tool li{
     font-style: italic;
 }
-.main{
-    background-color: lightyellow;
-    margin-bottom: 10%;
-}
-.main img{
-    
-}
-a{
+.tool label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
     display: block;
 }
-img{
+.main{
+    background-color: lightyellow;
+    float: right;
+    position:relative;
+    width: 65%;
+    padding: 2%;
+}
+.main img{
     margin: 10px;
     border:10px solid lightslategray;
     padding: 10px;
+    float: left;
+}
+.main p{
+    float: right;
+}
+a{
+    display: block;
 }
 .signup{
     margin-bottom: 15px;
@@ -40,5 +46,18 @@ img{
     background-color: rgb(138, 74, 74);
     color: linen;
     padding: 5px;
-    width:max-content;
+}
+.signup button{
+    margin-top: 5px;
+}
+.signup label{
+    text-decoration: none;
+}
+.foot{
+    clear: both;
+    background-color: blanchedalmond;
+    margin-top: 20px;
+}
+.foot label{
+    font-weight: 900;
 }
