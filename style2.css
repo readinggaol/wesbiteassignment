@@ -48,9 +48,13 @@ body{
     text-align: center;
     font-size: 1.5em;
 }
+.tool ul{
+    padding-left: 1em;
+}
 .tool blockquote{
     margin: 0;
     border: .3em dashed rgb(13, 58, 88);
+    padding: .2em;
 }
 .signup label{
     font-size: 1em;
