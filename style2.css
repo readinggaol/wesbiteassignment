@@ -1,12 +1,17 @@
+body{
+    background-color: rgb(102, 114, 124);
+}
 .banner{
-    display: grid;
-    grid-template-columns: 6fr 1fr;
-    grid-auto-columns: minmax(94px, auto);
-    background-color: gainsboro;
+    display: grid; /*intialize grid for elements in class*/
+    grid-template-columns: 6fr 1fr; /*fr is 'fractions' and shows much space*/
+    grid-auto-columns: minmax(94px, auto); /*gives min/max height*/
+    align-items: end; /*begins items at the bottom of grid track*/
+    background-color: rgb(231, 219, 197);
+    border-radius: 1.5em 1.5em 0 0; /*selectively rounded corners --> T, R, B, L*/
 }
 .banner img{
     width: 168px;
-    height: 124px;
+    height: 120px;
 }
 .banner h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -21,12 +26,53 @@
     grid-gap:1em;
 }
 .main{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: burlywood;
     padding: 1em;
-    display: grid;
-    grid-auto-columns: 4fr 1fr;
+    border-radius: 0 0 1.5em 0;
+}
+.main img{
+    float: right;
+    border: .5em solid rgb(231, 219, 197);
+    margin-left: .5em;
 }
 .tool{
-    background-color:darkorange;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:rgb(224, 74, 28);
+    color: rgb(231, 219, 197);
     padding: 1em;
+    border-radius: 0 0 0 1.5em;
+}
+.tool label{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.5em;
+}
+.tool blockquote{
+    margin: 0;
+    border: .3em dashed rgb(13, 58, 88);
+}
+.signup label{
+    font-size: 1em;
+}
+.foot{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.foot a{
+    background-color: rgb(224, 74, 28);
+    padding: .5em;
+    font-size: 1.2em;
+}
+.footbridge{
+    font-size: 1.5em;
+    color: rgb(231, 219, 197);
+    background-color: rgb(13, 58, 88);
+    grid-column: 1/5; /*says that the footbridge track will occupy all cells from line 1 to 5*/
+    margin-top: 1em;
+    padding-top: .5em;
 }
