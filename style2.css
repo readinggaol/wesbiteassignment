@@ -57,7 +57,6 @@ body{
 }
 .tool li:hover{
     color: white;
-    font-size: 1.2em;
     transform: translateX(20%);
     opacity: 85%;
 }
