@@ -1,12 +1,15 @@
+/* Element selector */
 body{
     background-color: rgb(102, 114, 124);
 }
+/* Class selector//background color */
 .banner{
     display: grid; /*intialize grid for elements in class*/
     grid-template-columns: 6fr 1fr; /*fr is 'fractions' and shows much space*/
     grid-auto-columns: minmax(94px, auto); /*gives min/max height*/
     align-items: end; /*begins items at the bottom of grid track*/
-    background-color: rgb(231, 219, 197);
+    background-image: url("beach.jpg");
+    background-position: 40%;
     border-radius: 1.5em 1.5em 0 0; /*selectively rounded corners --> T, R, B, L*/
 }
 .banner img{
@@ -31,10 +34,12 @@ body{
     padding: 1em;
     border-radius: 0 0 1.5em 0;
 }
+/* Box Model properties */
 .main img{
     float: right;
     border: .5em solid rgb(231, 219, 197);
     margin-left: .5em;
+    padding: 0;
 }
 .tool{
     font-family: Kumbh Sans, sans-serif;
@@ -52,7 +57,8 @@ body{
     padding-left: 1em;
     font-family: Open Sans, sans-serif;
 }
-/*The transition is placed on the object itself, so that the transtition
+/* NOTE TO SELF */
+/*The transition is placed on the object itself, so that the transition
 doesn't immediately disappear when you stop hovering over it. Basically, this
 allows the element to transition smoothly on it's own independent of where your 
 cursor is*/
@@ -69,6 +75,16 @@ cursor is*/
     margin-bottom: 1em;
     border: .3em dashed rgb(13, 58, 88);
     padding: .2em;
+}
+/* ID selector//Collection of font requirements */
+#signlabel {
+    padding: 10px;
+    text-decoration: none;
+    font-family: Kumbh Sans, sans-serif;
+    font-size: 1.2em;
+    font-weight: 900;
+    font-style: italic;
+    color: whitesmoke;
 }
 .signup label{
     font-size: 1em;
