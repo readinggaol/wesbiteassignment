@@ -52,6 +52,10 @@ body{
     padding-left: 1em;
     font-family: Open Sans, sans-serif;
 }
+/*The transition is placed on the object itself, so that the transtition
+doesn't immediately disappear when you stop hovering over it. Basically, this
+allows the element to transition smoothly on it's own independent of where your 
+cursor is*/
 .tool li{
     transition: .3s;
 }
