@@ -31,7 +31,7 @@ body{
     font-family: Kumbh Sans, sans-serif;
     text-align: center;
     padding: .2em 0 .2em 0;
-    background-color:rgb(224, 74, 28);
+    background-color:rgb(247, 84, 73);
     color: rgb(231, 219, 197);
     flex: 1 1 33%;
 }
@@ -132,6 +132,14 @@ cursor is*/
 }
 
 @media only screen and (max-width: 600px) {
+    .banner{
+        grid-template-columns: 1fr; 
+        grid-auto-columns: minmax(64px, auto); 
+        text-align: center;
+    }
+    .banner img{
+        justify-self: center;
+    }
     .wrapper{
         display: grid;
         grid-template-columns: 1fr;
@@ -141,6 +149,9 @@ cursor is*/
         border-radius: 0 0 1.5em 1.5em;
     }
     .main{
-        border-radius: 0 0 1.5em 1.5em;
+        border-radius: 1.5em 1.5em 1.5em 1.5em;
+    }
+    .navbar{
+       flex-direction: column;
     }
 }
