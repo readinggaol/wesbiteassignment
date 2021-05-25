@@ -30,10 +30,16 @@ body{
 .navbar div{
     font-family: Kumbh Sans, sans-serif;
     text-align: center;
-    padding: .2em 0 .2em 0;
-    background-color:rgb(247, 84, 73);
+    padding: .4em 0 .2em 0;
+    background-color:rgb(224, 74, 28);
     color: rgb(231, 219, 197);
     flex: 1 1 33%;
+    transition: .3s;
+}
+.navbar div:hover{
+    background-color: rgb(231, 219, 197);
+    border-radius: .5em .5em .5em .5em;
+    flex-basis: 40%;
 }
 .navbar div a{
     text-decoration: none;
@@ -117,10 +123,18 @@ cursor is*/
     margin-bottom: 1em;
 }
 .foot a{
+    text-decoration: none;
     background-color: rgb(224, 74, 28);
-    padding: .5em;
+    padding-top: 1em;
     font-size: 1.2em;
+    transition: .3s;
     cursor: pointer;
+}
+.foot a:hover{
+    background-color:rgb(231, 219, 197);
+    border-radius: .5em .5em .5em .5em;
+    font-size: 1.4em;
+    padding-top: .8em;
 }
 .footbridge{
     font-size: 1.5em;
@@ -153,5 +167,23 @@ cursor is*/
     }
     .navbar{
        flex-direction: column;
+    }
+    .navbar div{
+        margin-top: .2em;
+        border-radius: .5em .5em .5em .5em;
+    }
+    .foot {
+        grid-template-columns: 1fr;
+    }
+    .foot a{
+        padding-top: .5em;
+        border-radius: .5em .5em .5em .5em;
+    }
+    .foot a:hover{
+        padding-top: .3em;
+    }
+    .footbridge{
+        border-radius: .5em .5em .5em .5em;
+        grid-column: 1/1;
     }
 }
