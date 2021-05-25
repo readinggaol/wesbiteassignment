@@ -23,10 +23,25 @@ body{
     margin: 0;
     padding-left: .5em;
 }
+.navbar{
+    display: flex;
+    margin: .2em 0 .2em 0;
+}
+.navbar div{
+    font-family: Kumbh Sans, sans-serif;
+    text-align: center;
+    padding: .2em 0 .2em 0;
+    background-color:rgb(224, 74, 28);
+    color: rgb(231, 219, 197);
+    flex: 1 1 33%;
+}
+.navbar div a{
+    text-decoration: none;
+}
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-gap:1em;
+    grid-gap:.5em;
 }
 .main{
     font-family: Open Sans, sans-serif;
@@ -114,4 +129,18 @@ cursor is*/
     grid-column: 1/5; /*says that the footbridge track will occupy all cells from line 1 to 5*/
     margin-top: 1em;
     padding-top: .5em;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:.5em;
+    }
+    .tool{
+        border-radius: 0 0 1.5em 1.5em;
+    }
+    .main{
+        border-radius: 0 0 1.5em 1.5em;
+    }
 }
