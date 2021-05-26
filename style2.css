@@ -84,12 +84,18 @@ doesn't immediately disappear when you stop hovering over it. Basically, this
 allows the element to transition smoothly on it's own independent of where your 
 cursor is*/
 .tool li{
+    list-style: none;
     transition: .3s;
+    padding-left: .2em;
 }
 .tool li:hover{
-    color: white;
-    transform: translateX(20%);
+    color: black;
+    background-color: rgb(231, 219, 197);
+    border-radius: .5em .5em .5em .5em;
+    transform: translateX(10%);
     opacity: 85%;
+    margin-right: 0;
+    padding-right: 0;
 }
 .tool blockquote{
     margin: 0;
