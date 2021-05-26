@@ -26,6 +26,8 @@ body{
 .navbar{
     display: flex;
     margin: .2em 0 .2em 0;
+    position: sticky;
+    top: 0;
 }
 .navbar div{
     font-family: Kumbh Sans, sans-serif;
